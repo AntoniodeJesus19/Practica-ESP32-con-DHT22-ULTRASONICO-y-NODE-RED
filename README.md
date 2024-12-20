@@ -221,7 +221,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
 9- Conexión de WOKWI
 
-![]()
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-14%20122830.png?raw=true)
 
 ## Resultados
 
