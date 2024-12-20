@@ -10,15 +10,15 @@ Utilizaremos la ESP32 en un entorno de adquisición de datos, le conectaremos un
 
 3- Colocamos un bloque **mqqtt in**.
 
-![]()
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-14%20114701.png?raw=true)
 
 4- Configurar el bloque con el puerto mqtt con el ip 35.172.255.228 el cual se obtuvo del [broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker).publico con el comando nslookup broker.emqx.in en el CMD.
 
-![]()
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-14%20114727.png?raw=true)
 
 5- Colocar el bloque json y configurarlo asi.
 
-![]()
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-14%20114751.png?raw=true)
 
 6- Colocamos tres bloques function y lo configuramos con el siguente codigo.
 
@@ -41,9 +41,9 @@ return msg;
 ```
 
 7- Colocamos los bloques de chart y gauge, los configuramos en el dashboard haciendo grupos, luego haciendo click en los chart y los gauge los colocamos en el grupo de nuestra elección.
-![]()
-![]()
-![]()
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-14%20121013.png?raw=true)
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-14%20121353.png?raw=true)
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-14%20121410.png?raw=true)
 
 8- Programación en ESP32
 ```
@@ -213,11 +213,11 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 ```
 -En estas lineas se modifica el broker que tengamos al momento, el username y la contraseña.
 
-![]()
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-14%20122027.png?raw=true)
 
 -En estas lineas podemos modificar la información que mandamos al node-red, IMPORTANTE en client.publish ponemos el nombre del TOPICO que nos piden en los demas bloques chart y gauge.
 
-![]()
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-14%20122447.png?raw=true)
 
 9- Conexión de WOKWI
 
@@ -225,13 +225,13 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
 ## Resultados
 
-![]()
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-20%20000246.png?raw=true)
 
-![]()
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-20%20000312.png?raw=true)
 
-![]()
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-20%20000333.png?raw=true)
 
-![]()
+![](https://github.com/AntoniodeJesus19/Practica-ESP32-con-DHT22-ULTRASONICO-y-NODE-RED/blob/main/Captura%20de%20pantalla%202024-12-20%20000548.png?raw=true)
 
 # Créditos
 
